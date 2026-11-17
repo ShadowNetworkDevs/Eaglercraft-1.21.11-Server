@@ -33,10 +33,10 @@ else
     echo "Missing: Server/MinecraftServer/server.jar"
 fi
 
-if [ -f Server/EaglerProxy/bungee.jar ]; then
+if [ -f Server/EaglerProxy/proxy.jar ]; then
     echo "Eaglercraft proxy found."
 else
-    echo "Missing: Server/EaglerProxy/bungee.jar"
+    echo "Missing: Server/EaglerProxy/proxy.jar"
 fi
 
 echo ""
