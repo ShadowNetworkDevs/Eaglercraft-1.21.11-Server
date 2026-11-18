@@ -17,8 +17,8 @@ if [ ! -f "$MC/server.jar" ]; then
     exit 1
 fi
 
-if [ ! -f "$PROXY/bungee.jar" ]; then
-    echo "Error: Proxy bungee.jar not found."
+if [ ! -f "$PROXY/proxy.jar" ]; then
+    echo "Error: Proxy proxy.jar not found."
     exit 1
 fi
 
@@ -51,7 +51,7 @@ echo "Starting Eaglercraft proxy..."
 tmux new-session -d \
     -s "$PROXY_SESSION" \
     -c "$PROXY" \
-    "java -jar bungee.jar > '$ROOT/logs/proxy.log' 2>&1"
+    "java -jar proxy.jar > '$ROOT/logs/proxy.log' 2>&1"
 
 sleep 2
 
