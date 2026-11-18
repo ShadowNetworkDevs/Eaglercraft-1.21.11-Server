@@ -68,3 +68,5 @@ To leave the Minecraft console without stopping the server, press **Ctrl+B**, th
 ---
 
 NOTE: This readme and the .sh files were generated with Artificial Intelligence, I will not be using this github repository it is only here to provide support for a newer version then what people that use my eaglercraft server templates repositories currently support.
+
+If its refusing to stop for wtv reason just run "tmux kill-session -t eagler_proxy 2>/dev/null; tmux kill-session -t eagler_minecraft 2>/dev/null" itll force kill it.
